@@ -1,3 +1,87 @@
-# This code creates a simple GUI application using Tkinter that allows users to take screenshots and record their screen.
-# The application includes buttons for taking a screenshot and starting a screen recording.
-# Built for Windows 10 that are lacking the capability to screen record.
+### 📄 `README.md` for SnarpingTool
+
+````markdown
+# 🖼️ SnarpingTool
+
+SnarpingTool is a simple Python-based desktop tool that captures screenshots and processes them using libraries like `pyautogui`, `tkinter`, `opencv-python`, and more. This repository includes all the steps to turn the project into a standalone `.exe` app for Windows — no need to install Python.
+
+---
+
+## 🚀 Features
+
+- Capture and process screen content
+- Works with common libraries like `pyautogui`, `tkinter`, and `Pillow`
+- Exported as a `.exe` for easy distribution
+
+---
+
+## 🛠️ How to Build the App on Windows 10
+
+### ✅ Step 1: Install Dependencies
+
+Open Command Prompt and install all required Python packages:
+
+```bash
+pip install pyautogui Pillow opencv-python numpy
+````
+
+> `tkinter` is usually bundled with Python on Windows. If it’s missing, install Python via [python.org](https://www.python.org/) and make sure "tkinter" is included.
+
+---
+
+### ✅ Step 2: Install PyInstaller
+
+To package the Python script into an executable:
+
+```bash
+pip install pyinstaller
+```
+
+---
+
+### ✅ Step 3: Create the `.exe` File
+
+Navigate to your project folder and run:
+
+```bash
+pyinstaller --onefile --noconsole app.py
+```
+
+* `--onefile`: Packages everything into one `.exe`
+* `--noconsole`: Hides the terminal window (ideal for GUI apps)
+
+---
+
+### ✅ Step 4: Locate and Run the App
+
+Your `.exe` will be located in the `dist/` folder:
+
+```
+SnarpingTool/
+├── build/
+├── dist/
+│   └── app.exe ← Run this file
+└── screen_toolkit_app.spec
+```
+
+You can now share this `.exe` with anyone using Windows!
+
+---
+
+## 🧑‍💻 Author
+
+**France Laurence Velarde**
+[GitHub](https://github.com/Prannsss)
+
+---
+
+## 📜 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+```
+
+---
+
+Let me know if you want me to customize this based on your app’s **exact features**, or if you want me to generate a matching `LICENSE` file too.
+```
