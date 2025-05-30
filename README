@@ -1,2 +1,3 @@
 # This code creates a simple GUI application using Tkinter that allows users to take screenshots and record their screen.
 # The application includes buttons for taking a screenshot and starting a screen recording.
+# Built for Windows 10 that are lacking the capability to screen record.
